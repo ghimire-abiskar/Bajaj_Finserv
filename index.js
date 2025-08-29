@@ -95,7 +95,7 @@ app.get("/", (req, res) => {
 app.use((req, res) => {
     res.status(404).json({
         is_success: false,
-        message: "Server Error",
+        message: "Route not defined. Kindly check the endpoint or the method of request being done",
     });
 });
 
